@@ -1,21 +1,24 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed'); 
 
+/* Resolve path */
+$dir = dirname(realpath(__FILE__));
+
 /* Loggly logging */
-require_once(APPPATH."lib/Pimple.php");
-require_once(APPPATH."lib/HasInputInterface.php");
-require_once(APPPATH."lib/LogglyInterface.php");
-require_once(APPPATH."lib/Input/InputInterface.php");
-require_once(APPPATH."lib/Input/HttpInputInterface.php");
-require_once(APPPATH."lib/Input/HttpInput.php");
-require_once(APPPATH."lib/Http/ClientInterface.php");
-require_once(APPPATH."lib/Http/AbstractClient.php");
-require_once(APPPATH."lib/Http/AsyncClient.php");
-require_once(APPPATH."lib/Http/BufferedAsyncClient.php");
-require_once(APPPATH."lib/ApiLogger.php");
+require_once("$dir/lib/Pimple.php");
+require_once("$dir/lib/HasInputInterface.php");
+require_once("$dir/lib/LogglyInterface.php");
+require_once("$dir/lib/Input/InputInterface.php");
+require_once("$dir/lib/Input/HttpInputInterface.php");
+require_once("$dir/lib/Input/HttpInput.php");
+require_once("$dir/lib/Http/ClientInterface.php");
+require_once("$dir/lib/Http/AbstractClient.php");
+require_once("$dir/lib/Http/AsyncClient.php");
+require_once("$dir/lib/Http/BufferedAsyncClient.php");
+require_once("$dir/lib/ApiLogger.php");
 
 class Loggly {
-  $this->logger = null;
-  $this->CI = null;
+  private $logger = null;
+  private $CI = null;
 
   public function __construct()
   {
