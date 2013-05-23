@@ -45,3 +45,6 @@ From any controller action:
 $this->load->library('loggly');
 $this->loggly->send('Hi Loggly!');
 ```
+
+## Acknowledgements
+PHP bindings taken from [cowlby's PHP Loggly Bindings library](https://github.com/cowlby/php-loggly-bindings)
