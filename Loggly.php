@@ -23,7 +23,7 @@ class Loggly {
   public function __construct()
   {
     $this->CI =& get_instance();
-    $loggly_key = $this->CI->config('loggly_key');
+    $loggly_key = $this->CI->config->item('loggly_key');
     $this->logger = new Cowlby\Loggly\ApiLogger($loggly_key);
   }
 
