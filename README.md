@@ -1,5 +1,5 @@
 ![CodeIgniter](http://www.elreplicante.com.ar/wp-content/uploads/2012/05/codeigniter-logo.png)
-<span style="margin: 0 10px; font-size: 20px">meets</span>
+### meets
 ![Loggly](http://blog.sparklehouse.com/wp-content/uploads/2011/07/cc28b733b8y-logo.jpg.jpg)
 
 <div style="margin-top: 50px;">
@@ -11,7 +11,7 @@ This library allows you to send data to Loggly from inside CodeIgniter (i.e. con
 Either download and unpack the archive into application/libraries/Loggly or use git submodules. Use sudo if you're in a restricted directory.
 
 #### Git Submodules
-From your CodeIgniter root directory:
+Run this in Terminal from your CodeIgniter root directory:
 
 ```bash
 git submodule add git://github.com/frankpinto/codeigniter-loggly.git application/libraries/Loggly
